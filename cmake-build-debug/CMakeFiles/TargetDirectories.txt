@@ -1,3 +1,0 @@
-E:/CvmSeccomp/cmake-build-debug/CMakeFiles/CvmSeccomp.dir
-E:/CvmSeccomp/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/CvmSeccomp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
