@@ -1,0 +1,145 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/android-legacy.toolchain.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/platforms.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Android-Initialize.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Android.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Android-Clang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Android-Clang.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/hooks/pre/Android-Clang.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/flags.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/CLion 2023.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "E:/CvmSeccomp/cmake-build-debug",
+		"source" : "E:/CvmSeccomp"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

@@ -17,7 +17,7 @@
 rule C_COMPILER__CvmSeccomp_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = "D:\CLion 2023.2\bin\mingw\bin\gcc.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = C:\Users\Ccccccccvm\AppData\Local\Android\Sdk\ndk\25.1.8937393\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=aarch64-none-linux-android29 --sysroot=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -25,7 +25,7 @@ rule C_COMPILER__CvmSeccomp_unscanned_Debug
 # Rule for linking C shared library.
 
 rule C_SHARED_LIBRARY_LINKER__CvmSeccomp_Debug
-  command = cmd.exe /C "$PRE_LINK && "D:\CLion 2023.2\bin\mingw\bin\gcc.exe" $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && C:\Users\Ccccccccvm\AppData\Local\Android\Sdk\ndk\25.1.8937393\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=aarch64-none-linux-android29 --sysroot=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C shared library $TARGET_FILE
   restat = $RESTAT
 

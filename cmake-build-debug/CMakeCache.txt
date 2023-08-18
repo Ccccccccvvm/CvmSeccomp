@@ -15,10 +15,19 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/addr2line.exe
+CMAKE_ADDR2LINE:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-addr2line.exe
 
-//Path to a program.
-CMAKE_AR:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/ar.exe
+//Archiver
+CMAKE_AR:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar.exe
+
+//Flags used by the compiler during all build types.
+CMAKE_ASM_FLAGS:STRING=
+
+//Flags used by the compiler during debug builds.
+CMAKE_ASM_FLAGS_DEBUG:STRING=
+
+//Flags used by the compiler during release builds.
+CMAKE_ASM_FLAGS_RELEASE:STRING=
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -27,39 +36,46 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable colored diagnostics throughout.
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/gcc.exe
+//Flags used by the compiler during all build types.
+CMAKE_CXX_FLAGS:STRING=
 
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/gcc-ar.exe
+//Flags used by the compiler during debug builds.
+CMAKE_CXX_FLAGS_DEBUG:STRING=
 
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/gcc-ranlib.exe
+//Flags used by the compiler during release builds.
+CMAKE_CXX_FLAGS_RELEASE:STRING=
 
-//Flags used by the C compiler during all build types.
+//LLVM archiver
+CMAKE_C_COMPILER_AR:FILEPATH=CMAKE_C_COMPILER_AR-NOTFOUND
+
+//`clang-scan-deps` dependency scanner
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=CMAKE_C_COMPILER_CLANG_SCAN_DEPS-NOTFOUND
+
+//Generate index for LLVM archive
+CMAKE_C_COMPILER_RANLIB:FILEPATH=CMAKE_C_COMPILER_RANLIB-NOTFOUND
+
+//Flags used by the compiler during all build types.
 CMAKE_C_FLAGS:STRING=
 
-//Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=-g
+//Flags used by the compiler during debug builds.
+CMAKE_C_FLAGS_DEBUG:STRING=
 
 //Flags used by the C compiler during MINSIZEREL builds.
 CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
-//Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+//Flags used by the compiler during release builds.
+CMAKE_C_FLAGS_RELEASE:STRING=
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Libraries linked by default with all C applications.
-CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+CMAKE_C_STANDARD_LIBRARIES:STRING=-latomic -lm
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/dlltool.exe
 
-//Flags used by the linker during all build types.
+//Flags used by the linker.
 CMAKE_EXE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during DEBUG builds.
@@ -80,20 +96,16 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=E:/CvmSeccomp/cmake-build-debug/CMakeFiles/pkgRedirects
 
-//Convert GNU import libraries to MS format (requires Visual Studio)
-CMAKE_GNUtoMS:BOOL=OFF
-
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/CvmSeccomp
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/ld.exe
+CMAKE_LINKER:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/ld.lld.exe
 
 //make program
 CMAKE_MAKE_PROGRAM:FILEPATH=D:/CLion 2023.2/bin/ninja/win/x64/ninja.exe
 
-//Flags used by the linker during the creation of modules during
-// all build types.
+//Flags used by the linker during the creation of modules.
 CMAKE_MODULE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of modules during
@@ -113,13 +125,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/nm.exe
+CMAKE_NM:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/objcopy.exe
+CMAKE_OBJCOPY:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-objcopy.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/objdump.exe
+CMAKE_OBJDUMP:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -130,32 +142,13 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=CvmSeccomp
 
-//Path to a program.
-CMAKE_RANLIB:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/ranlib.exe
-
-//RC compiler
-CMAKE_RC_COMPILER:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/windres.exe
-
-//Flags for Windows Resource Compiler during all build types.
-CMAKE_RC_FLAGS:STRING=
-
-//Flags for Windows Resource Compiler during DEBUG builds.
-CMAKE_RC_FLAGS_DEBUG:STRING=
-
-//Flags for Windows Resource Compiler during MINSIZEREL builds.
-CMAKE_RC_FLAGS_MINSIZEREL:STRING=
-
-//Flags for Windows Resource Compiler during RELEASE builds.
-CMAKE_RC_FLAGS_RELEASE:STRING=
-
-//Flags for Windows Resource Compiler during RELWITHDEBINFO builds.
-CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
+//Ranlib
+CMAKE_RANLIB:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ranlib.exe
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/readelf.exe
+CMAKE_READELF:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-readelf.exe
 
-//Flags used by the linker during the creation of shared libraries
-// during all build types.
+//Flags used by the linker during the creation of dll's.
 CMAKE_SHARED_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of shared libraries
@@ -201,8 +194,11 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Path to a program.
-CMAKE_STRIP:FILEPATH=D:/CLion 2023.2/bin/mingw/bin/strip.exe
+//Strip
+CMAKE_STRIP:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe
+
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -218,6 +214,9 @@ CvmSeccomp_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 CvmSeccomp_SOURCE_DIR:STATIC=E:/CvmSeccomp
+
+//Path to a library.
+log-lib:FILEPATH=C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/29/liblog.so
 
 
 ########################
@@ -242,10 +241,10 @@ CMAKE_COMMAND:INTERNAL=D:/CLion 2023.2/bin/cmake/win/x64/bin/cmake.exe
 CMAKE_CPACK_COMMAND:INTERNAL=D:/CLion 2023.2/bin/cmake/win/x64/bin/cpack.exe
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=D:/CLion 2023.2/bin/cmake/win/x64/bin/ctest.exe
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_CLANG_SCAN_DEPS
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
 CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
@@ -263,7 +262,7 @@ CMAKE_C_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Executable file format
-CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
+CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
@@ -289,6 +288,8 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=E:/CvmSeccomp
+//Install .so files without execute permission.
+CMAKE_INSTALL_SO_NO_EXE:INTERNAL=0
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -313,19 +314,6 @@ CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_COMPILER
-CMAKE_RC_COMPILER-ADVANCED:INTERNAL=1
-CMAKE_RC_COMPILER_WORKS:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_FLAGS
-CMAKE_RC_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_FLAGS_DEBUG
-CMAKE_RC_FLAGS_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_FLAGS_MINSIZEREL
-CMAKE_RC_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_FLAGS_RELEASE
-CMAKE_RC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_FLAGS_RELWITHDEBINFO
-CMAKE_RC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.

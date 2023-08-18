@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/addr2line.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -27,11 +27,47 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/ar.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar.exe"
+		},
+		{
+			"name" : "CMAKE_ASM_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_ASM_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during debug builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_ASM_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during release builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -142,20 +178,40 @@
 			"value" : "D:/CLion 2023.2/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
-			"name" : "CMAKE_C_COMPILER",
+			"name" : "CMAKE_CXX_FLAGS",
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "Flags used by the compiler during all build types."
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/gcc.exe"
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_CXX_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during debug builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_CXX_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during release builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -167,11 +223,27 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "LLVM archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/gcc-ar.exe"
+			"value" : "CMAKE_C_COMPILER_AR-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_C_COMPILER_CLANG_SCAN_DEPS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "`clang-scan-deps` dependency scanner"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_C_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -183,11 +255,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "Generate index for LLVM archive"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/gcc-ranlib.exe"
+			"value" : "CMAKE_C_COMPILER_RANLIB-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -199,7 +271,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the C compiler during all build types."
+					"value" : "Flags used by the compiler during all build types."
 				}
 			],
 			"type" : "STRING",
@@ -215,11 +287,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the C compiler during DEBUG builds."
+					"value" : "Flags used by the compiler during debug builds."
 				}
 			],
 			"type" : "STRING",
-			"value" : "-g"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_MINSIZEREL",
@@ -247,11 +319,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the C compiler during RELEASE builds."
+					"value" : "Flags used by the compiler during release builds."
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O3 -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_RELWITHDEBINFO",
@@ -283,7 +355,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
+			"value" : "-latomic -lm"
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -311,7 +383,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Unknown"
+			"value" : "ELF"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS",
@@ -323,7 +395,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during all build types."
+					"value" : "Flags used by the linker."
 				}
 			],
 			"type" : "STRING",
@@ -482,18 +554,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_GNUtoMS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Convert GNU import libraries to MS format (requires Visual Studio)"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "CMAKE_HOME_DIRECTORY",
 			"properties" : 
 			[
@@ -518,6 +578,18 @@
 			"value" : "C:/Program Files (x86)/CvmSeccomp"
 		},
 		{
+			"name" : "CMAKE_INSTALL_SO_NO_EXE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Install .so files without execute permission."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "0"
+		},
+		{
 			"name" : "CMAKE_LINKER",
 			"properties" : 
 			[
@@ -531,7 +603,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/ld.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/ld.lld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -555,7 +627,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of modules during all build types."
+					"value" : "Flags used by the linker during the creation of modules."
 				}
 			],
 			"type" : "STRING",
@@ -639,7 +711,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/nm.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -667,7 +739,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/objcopy.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -683,7 +755,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/objdump.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -743,119 +815,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Ranlib"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/ranlib.exe"
-		},
-		{
-			"name" : "CMAKE_RC_COMPILER",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "RC compiler"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/windres.exe"
-		},
-		{
-			"name" : "CMAKE_RC_COMPILER_WORKS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
-		},
-		{
-			"name" : "CMAKE_RC_FLAGS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags for Windows Resource Compiler during all build types."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_RC_FLAGS_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags for Windows Resource Compiler during DEBUG builds."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_RC_FLAGS_MINSIZEREL",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags for Windows Resource Compiler during MINSIZEREL builds."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_RC_FLAGS_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags for Windows Resource Compiler during RELEASE builds."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_RC_FLAGS_RELWITHDEBINFO",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags for Windows Resource Compiler during RELWITHDEBINFO builds."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -871,7 +835,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/readelf.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -895,7 +859,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of shared libraries during all build types."
+					"value" : "Flags used by the linker during the creation of dll's."
 				}
 			],
 			"type" : "STRING",
@@ -1087,11 +1051,23 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Strip"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/CLion 2023.2/bin/mingw/bin/strip.exe"
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe"
+		},
+		{
+			"name" : "CMAKE_TOOLCHAIN_FILE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The CMake toolchain file"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1156,6 +1132,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
+		},
+		{
+			"name" : "log-lib",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Users/Ccccccccvm/AppData/Local/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/aarch64-linux-android/29/liblog.so"
 		}
 	],
 	"kind" : "cache",
